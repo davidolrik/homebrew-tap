@@ -3,7 +3,7 @@ cask "overseer" do
   name "overseer"
   desc "SSH Tunnel Manager"
   homepage "https://overseer.olrik.dev/"
-  version "2.4.0"
+  version "2.4.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "overseer" do
   on_macos do
     on_intel do
       url "https://github.com/davidolrik/overseer/releases/download/v#{version}/overseer_Darwin_x86_64.tar.gz"
-      sha256 "9f35e4864380bf194eb5e95e5fad3fc4b3ca8719017f66410b1cfc85249e743b"
+      sha256 "30947a6e3220eecac31e415815391c613d7978fa1a49f4fcfaddf4c05e1de7f3"
     end
     on_arm do
       url "https://github.com/davidolrik/overseer/releases/download/v#{version}/overseer_Darwin_arm64.tar.gz"
-      sha256 "2f936b0f4257d36e8b18f4137929c8bc195009c49a9208f67c34ed69d5b43c4b"
+      sha256 "ec10efed557ad283f97736226af8995ccc574d1d142f7bb1ec83dd0198d36427"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/davidolrik/overseer/releases/download/v#{version}/overseer_Linux_x86_64.tar.gz"
-      sha256 "1aea00b336ffe926a864f93be0bd401b5802f7d6dc5dd36e389f1d4a70d52c83"
+      sha256 "107b63de5040ee119d65833ecc6e187727569b0b9deb07940a2d359087c40684"
     end
     on_arm do
       url "https://github.com/davidolrik/overseer/releases/download/v#{version}/overseer_Linux_arm64.tar.gz"
-      sha256 "17f4ec338e95f0002ef37ce07d573eb4932272aa12070c12afdee83cbbda9ac3"
+      sha256 "06ab417cec9dbb917cd5822b27a083a3a063555daef8be4acb5092401560c914"
     end
   end
 
