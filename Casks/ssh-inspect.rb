@@ -17,22 +17,22 @@ cask "ssh-inspect" do
   on_macos do
     on_intel do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Darwin_x86_64.tar.gz"
-      sha256 "ba961c11b2f857f5c60d386118669a5e829d4119a1bd63bc57452bdaf66b1826"
+      sha256 "6690efd1db9ab26793f7d3e7e4bb285f3a01dd67f5d1a3b1195b05c6079a2a9a"
     end
     on_arm do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Darwin_arm64.tar.gz"
-      sha256 "a7a432d3e5fa7fe59bab022ceb78335de530438e35bf10e5c59ef7411a1286f7"
+      sha256 "2b5f95e8bfd7997320608a56cc52d9671efbab9876d5fedf221446f169971440"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Linux_x86_64.tar.gz"
-      sha256 "a5e46b8aece17044e509d4520981b68a6f68f8fa9d60f1df60b71fd1ff7ee920"
+      sha256 "36b30e8a6fbd877f786a85e325ec7622e9293321c496e682dcebf9725ab0e124"
     end
     on_arm do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Linux_arm64.tar.gz"
-      sha256 "73df32231b3767e8cd4f82e29bd8b04066903a80a535de927883a535ba32bf25"
+      sha256 "6277d3eb71acfa254ee7d9408308bc263d4614c24cb5a6aca718ad501adc418b"
     end
   end
 
