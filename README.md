@@ -10,9 +10,18 @@ brew tap davidolrik/tap
 
 ## Available Formulae
 
-| Formula                                 | Description                             |
-| --------------------------------------- | --------------------------------------- |
-| [subspace](https://subspace.olrik.dev/) | Transparent proxy with upstream routing |
+| Formula                                                    | Description                             |
+| ---------------------------------------------------------- | --------------------------------------- |
+| [ssh-inspect](https://github.com/davidolrik/ssh-inspect)   | Show SSH configuration for a hostname   |
+| [subspace](https://subspace.olrik.dev/)                    | Transparent proxy with upstream routing |
+
+### SSH Inspect
+
+Install:
+
+```sh
+brew install davidolrik/tap/ssh-inspect
+```
 
 ### Subspace
 
