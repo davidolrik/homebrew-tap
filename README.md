@@ -10,17 +10,23 @@ brew tap davidolrik/tap
 
 ## Available Formulae
 
-| Formula                                                    | Description                             |
-| ---------------------------------------------------------- | --------------------------------------- |
-| [ssh-inspect](https://github.com/davidolrik/ssh-inspect)   | Show SSH configuration for a hostname   |
-| [subspace](https://subspace.olrik.dev/)                    | Transparent proxy with upstream routing |
+| Formula                                        | Description                             |
+| ---------------------------------------------- | --------------------------------------- |
+| [overseer](https://overseer.olrik.dev/)        | SSH Tunnel Manager                      |
+| [subspace](https://subspace.olrik.dev/)        | Transparent proxy with upstream routing |
 
-### SSH Inspect
+### Overseer
 
 Install:
 
 ```sh
-brew install davidolrik/tap/ssh-inspect
+brew install davidolrik/tap/overseer
+```
+
+Run as a background service:
+
+```sh
+brew services start overseer
 ```
 
 ### Subspace
@@ -35,6 +41,20 @@ Run as a background service:
 
 ```sh
 brew services start subspace
+```
+
+## Available Casks
+
+| Cask                                                       | Description                           |
+| ---------------------------------------------------------- | ------------------------------------- |
+| [ssh-inspect](https://github.com/davidolrik/ssh-inspect)   | Show SSH configuration for a hostname |
+
+### SSH Inspect
+
+Install:
+
+```sh
+brew install davidolrik/tap/ssh-inspect
 ```
 
 ## Updating
