@@ -3,7 +3,7 @@ cask "ssh-inspect" do
   name "ssh-inspect"
   desc "Show SSH configuration for a hostname"
   homepage "https://github.com/davidolrik/ssh-inspect"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "ssh-inspect" do
   on_macos do
     on_intel do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Darwin_x86_64.tar.gz"
-      sha256 "339f82ea209a8ae9d8e3ae517cf2b630a37b4626fa951b96eb1db67cf3858d49"
+      sha256 "ba961c11b2f857f5c60d386118669a5e829d4119a1bd63bc57452bdaf66b1826"
     end
     on_arm do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Darwin_arm64.tar.gz"
-      sha256 "bf95970daca23a3fc9974d3435b349f73c29f14dbb867dae49b214c4bca58865"
+      sha256 "a7a432d3e5fa7fe59bab022ceb78335de530438e35bf10e5c59ef7411a1286f7"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Linux_x86_64.tar.gz"
-      sha256 "d2201100974d7758d602a96d845086f95007f2ee7a56bbe3cbe2bee8880dbd4c"
+      sha256 "a5e46b8aece17044e509d4520981b68a6f68f8fa9d60f1df60b71fd1ff7ee920"
     end
     on_arm do
       url "https://github.com/davidolrik/ssh-inspect/releases/download/v#{version}/ssh-inspect_Linux_arm64.tar.gz"
-      sha256 "c3356aeb2abb2d43b37b4f14b99cddf2938c08ad73ad76fab6d2fee2ec897780"
+      sha256 "73df32231b3767e8cd4f82e29bd8b04066903a80a535de927883a535ba32bf25"
     end
   end
 
