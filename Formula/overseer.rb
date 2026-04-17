@@ -5,13 +5,13 @@
 class Overseer < Formula
   desc "SSH Tunnel Manager"
   homepage "https://overseer.olrik.dev/"
-  version "2.6.1"
+  version "2.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davidolrik/overseer/releases/download/v2.6.1/overseer_Darwin_x86_64.tar.gz"
-      sha256 "a4ba15cedb53b5c28b2826cfbe96685759940d0fe71c5979f0bb0d1a9ced95aa"
+      url "https://github.com/davidolrik/overseer/releases/download/v2.7.0/overseer_Darwin_x86_64.tar.gz"
+      sha256 "78ba38cac6996683b03fb3fb0194f932f29e2947de5fb9abb1b7dcb50110ee2d"
 
       define_method(:install) do
         bin.install "overseer"
@@ -21,8 +21,8 @@ class Overseer < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davidolrik/overseer/releases/download/v2.6.1/overseer_Darwin_arm64.tar.gz"
-      sha256 "c9c2a23ed7d661a1774a9834e9a9db7c515a1417a29882bc1114162d8b997fee"
+      url "https://github.com/davidolrik/overseer/releases/download/v2.7.0/overseer_Darwin_arm64.tar.gz"
+      sha256 "d16940ac4c55128b06d40ead74678508bd0a23259fb89ca31f71f80d4b7d2b21"
 
       define_method(:install) do
         bin.install "overseer"
@@ -35,8 +35,8 @@ class Overseer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davidolrik/overseer/releases/download/v2.6.1/overseer_Linux_x86_64.tar.gz"
-      sha256 "2a1f3cda8922d6152232aab656c41ef49c628246052a8c9e579f8416385e4d68"
+      url "https://github.com/davidolrik/overseer/releases/download/v2.7.0/overseer_Linux_x86_64.tar.gz"
+      sha256 "6f00aa02122c01768c6a93d2e8c6f4cec16eed8a371dac2990fd6a6ffa09d7a2"
       define_method(:install) do
         bin.install "overseer"
         bash_completion.install "completions/overseer.bash" => "overseer"
@@ -45,8 +45,8 @@ class Overseer < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davidolrik/overseer/releases/download/v2.6.1/overseer_Linux_arm64.tar.gz"
-      sha256 "1979d0db3b9b83bb1fbb83a6025ec497bc8b753eb44892a85e8d9b861076e27f"
+      url "https://github.com/davidolrik/overseer/releases/download/v2.7.0/overseer_Linux_arm64.tar.gz"
+      sha256 "82e59bdb72b085030e69a08e3489445984a24710f4c8faec3b78b87a89243873"
       define_method(:install) do
         bin.install "overseer"
         bash_completion.install "completions/overseer.bash" => "overseer"
