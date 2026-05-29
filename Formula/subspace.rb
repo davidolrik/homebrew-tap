@@ -5,13 +5,13 @@
 class Subspace < Formula
   desc "Transparent proxy with upstream routing"
   homepage "https://subspace.olrik.dev/"
-  version "1.10.1"
+  version "1.10.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davidolrik/subspace/releases/download/v1.10.1/subspace_1.10.1_darwin_amd64.tar.gz"
-      sha256 "23d3041626553fc49559d471e0613f12bd5e9c0a802c9edeab64a0085ae8675f"
+      url "https://github.com/davidolrik/subspace/releases/download/v1.10.2/subspace_1.10.2_darwin_amd64.tar.gz"
+      sha256 "923ad7f7a8ffe7316d3e4a883d58fa3c1b122e7f43990ca63cc2dafeca631f05"
 
       define_method(:install) do
         bin.install "subspace"
@@ -20,8 +20,8 @@ class Subspace < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davidolrik/subspace/releases/download/v1.10.1/subspace_1.10.1_darwin_arm64.tar.gz"
-      sha256 "e45cb77086ec03c61ebcb0ce01074aa7dd2307e640b62cfa8e7fd007cc5fd6c0"
+      url "https://github.com/davidolrik/subspace/releases/download/v1.10.2/subspace_1.10.2_darwin_arm64.tar.gz"
+      sha256 "fd67b256f28554e51a0089754269cbbb4b7acf96f7fd4868aa158e63868506c3"
 
       define_method(:install) do
         bin.install "subspace"
@@ -33,8 +33,8 @@ class Subspace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davidolrik/subspace/releases/download/v1.10.1/subspace_1.10.1_linux_amd64.tar.gz"
-      sha256 "1fb0c17712954d552ca06de239c743276567623ff664cf336da21f6bac2b970f"
+      url "https://github.com/davidolrik/subspace/releases/download/v1.10.2/subspace_1.10.2_linux_amd64.tar.gz"
+      sha256 "663bd9fa8fb0aa2366243dc15f5807f1b445d73124367b106791bbf3f8365a8d"
       define_method(:install) do
         bin.install "subspace"
 
@@ -42,8 +42,8 @@ class Subspace < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davidolrik/subspace/releases/download/v1.10.1/subspace_1.10.1_linux_arm64.tar.gz"
-      sha256 "cf86de15dd611f29316346e31ad4bc28385735c4078426ca123d3c740727794f"
+      url "https://github.com/davidolrik/subspace/releases/download/v1.10.2/subspace_1.10.2_linux_arm64.tar.gz"
+      sha256 "447f78f4b31f1a57243e5ab96807fdc446c94711452a890df973f08ea9136352"
       define_method(:install) do
         bin.install "subspace"
 
